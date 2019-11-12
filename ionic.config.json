@@ -1,5 +1,7 @@
 {
   "name": "Winji_App",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

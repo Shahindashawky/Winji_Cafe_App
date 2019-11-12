@@ -1,4 +1,76 @@
+ion-menu-button{
+  --background-focused: #D44258;
+  --color-selected: #D44258;
+}
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
+}
+ion-content{
+  --ion-background-color:rgb(236, 234, 234);
+
+}
+.welcome-card{
+  background-color:rgb(255, 255, 255);
+
+}
+
+ion-title{
+  --color: #D44258;
+  font-size:30px;
+  text-align: center;
+
+}
+ion-card-title{
+  --color: #D44258;
+
+}
+.a{
+   
+  background-color: rgb(252, 249, 249);
+  width: 150%; /* =cw */
+  height: 30%; /* =ch */
+  box-shadow: 0 0 32px rgb(253, 251, 251);
+  position: absolute;
+  filter: blur(27px);
+  -webkit-filter: blur(30px);
+  top: 50%; /* =ct */
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+      
+}
+.line-break{
+  overflow: inherit ;
+  text-overflow: inherit ;
+  white-space: normal;
+}
+.btn{
+  background-color:#EFE1E3;
+  padding:10px;
+  border-radius:50px;
+  width:230px;
+  margin-left: 130px;
+  text-align: center;
+}
+.input{
+  background:white ;
+  border-radius:50px;
+  text-align: center;
+  font-size: 22px;
+  height:30px;
+  color: #393378;
+
+}
+.time{
+  background-color:white;
+  color: #393378;
+  padding:10px;
+  border-radius:50px;
+  width:190px;
+  height:40px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 22px;
+
 }

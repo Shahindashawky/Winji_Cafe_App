@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
-    </ion-title>
+        Searching    
+      </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <div text-center>
+        <ion-searchbar style="background: white;" [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()"></ion-searchbar>
+          <ion-card *ngFor="let c of card">
+              <img [src]="c.src"/>
+          
+              <ion-card-header>
+                  <ion-card-title style="color:black;">{{c.title}}</ion-card-title>
+                  <ion-card-subtitle style="color:#D44258;font-size: 20px;text-align: end">{{c.price | currency:'USD':'symbol'}}</ion-card-subtitle>
+          
+              </ion-card-header>
+              <ion-card-content>
+                <ion-button shape="round" (click)="addToCart(c)">Add To Order</ion-button>
+              </ion-card-content>
+            
+            </ion-card>
+        </div>
+</ion-content>

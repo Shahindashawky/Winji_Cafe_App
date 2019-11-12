@@ -1,0 +1,31 @@
+<ion-app>
+  <ion-split-pane when="true" contentId="my-content" >
+    <ion-menu side="start" contentId="my-content" >
+      <ion-header>
+        <ion-toolbar  text-center>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+
+        <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+            <ion-item [href]="p.url" [class.active-item]="selectedPath.startsWith(p.url)">
+              <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle> -->
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+            <ion-item [routerLink]="p.url" routerDirection="root"
+              [class.active-item]="selectedPath.startsWith(p.url)">
+              <ion-label>
+                {{ p.title }}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="my-content"></ion-router-outlet>
+  </ion-split-pane>
+
+</ion-app>

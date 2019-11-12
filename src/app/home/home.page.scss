@@ -1,0 +1,38 @@
+
+img{
+   
+    width:100%;
+    height:80%;
+    background-size:cover;
+
+
+}
+ion-button{
+    --background: #D44258;
+    --background-hover: rgb(184, 56, 75) ;
+      --color: rgb(252, 250, 250);
+      --border: 1px;
+      --position: absolute;
+      -webkit-margin-start: 30px;
+      font-size: 20px;
+      font-style: Semibold;
+      width:60%;
+      height:10%;
+      
+
+}
+.a{
+   
+    background-color: rgb(252, 249, 249);
+    width: 150%; /* =cw */
+    height: 30%; /* =ch */
+    box-shadow: 0 0 32px rgb(253, 251, 251);
+    position: absolute;
+    filter: blur(27px);
+    -webkit-filter: blur(27px);
+    top: 80%; /* =ct */
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+        
+}
